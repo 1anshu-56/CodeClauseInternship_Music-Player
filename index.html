@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=0.1">
+  <title>Music Player</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <script src="https://kit.fontawesome.com/6ce6a406c1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="music-player">
+      <nav>
+        <div class="circle">
+          <i class="fa-solid fa-angle-left"></i>
+        </div>
+        <div class="circle">
+          <i class="fa-solid fa-bars"></i>
+        </div>
+      </nav>
+      <img src="image.png" class="songpic">
+      <div class="song-info">
+      <h1>Despacito</h1>
+      <p>Luis Fonsi Ft. Puerti Rican</p>
+      </div>
+      <audio id="song1">
+        <source src="Despacito.mp3" type="audio/mpeg">
+      </audio>
+      <div class="song-info">
+      <h1>Sohni</h1>
+      <p>Ammy Virk</p>
+      </div>
+      <audio id="song2">
+        <source src="Sohni.mp3" type="audio/mpeg">
+      </audio>
+      <div class="song-info">
+      <h1>Despacito</h1>
+      <p>Stebin Ben</p>
+      </div>
+      <audio id="song3">
+        <source src="Toota Taara.mp3" type="audio/mpeg">
+      </audio>
+      <input type="range" value="0" id="progress">
+
+      <div class="controls">
+        <div><i class="fa-solid fa-backward-step"></i></div>
+        <div onclick="playPause()"><i class="fa-solid fa-play" id="ctrlIcon"></i></div>
+        <div><i class="fa-solid fa-forward-step"></i></div>
+      </div>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script src="https://replit.com/public/js/replit-badge-v2.js" theme="dark" position="bottom-right"></script>
+</body>
+
+</html>
